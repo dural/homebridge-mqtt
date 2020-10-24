@@ -2,8 +2,10 @@
 
 [![NPM version][npm-image]][npm-url]
 
-[npm-image]: http://img.shields.io/npm/v/homebridge-mqtt.svg
-[npm-url]: https://npmjs.org/package/homebridge-mqtt
+[npm-image]: http://img.shields.io/npm/v/homebridge-mqtt-fixed.id.svg
+[npm-url]: https://npmjs.org/package/homebridge-mqtt-fixed-id
+
+forked from cflurin/homebridge-mqtt
 
 Homebridge-mqtt is a Plugin for Homebridge. The design is based on MVC pattern, have a look at [homebridge-mvc](https://github.com/cflurin/homebridge-mvc). Homebridge-mqtt is a dynamic Plugin that allows you to add and control accessories from a "Bridge" or "Device" with a mqtt API. [Node-RED](http://nodered.org/) is the perfect platform to use with homebridge-mqtt.
 
@@ -15,7 +17,7 @@ If you are new to Homebridge, please first read the [documentation](https://gith
 
 Install homebridge-mqtt:
 ```sh
-sudo npm install -g homebridge-mqtt
+sudo npm install -g homebridge-mqtt-fixed-id
 ```
 
 ### Configuration
@@ -23,7 +25,7 @@ Add the mqtt-platform in config.json in your home directory inside `.homebridge`
 
 ```sh
 {
-  "platform": "mqtt",
+  "platform": "mqtt-fixed-id",
   "name": "mqtt",
   "url": "mqtt://127.0.0.1"
 }
@@ -66,6 +68,11 @@ topic : homebridge/from/set/flex_lamp
 Optional parameter `request_id`: A unique (user defined) value may be added to any request, it will be included in the corresponding response
 ```sh
 request_id : 4711
+```
+
+**Note 3:**
+```
+fixedId: "my_id"
 ```
 
 
