@@ -1,6 +1,6 @@
 {
   "name": "homebridge-mqtt-fixed-id",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MQTT Plugin for Homebridge with fixed id",
   "license": "ISC",
   "author": {
