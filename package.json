@@ -1,10 +1,10 @@
 {
-  "name": "homebridge-mqtt",
-  "version": "0.6.2",
-  "description": "MQTT Plugin for Homebridge",
+  "name": "homebridge-mqtt-fixed-id",
+  "version": "0.1.0",
+  "description": "MQTT Plugin for Homebridge with fixed id",
   "license": "ISC",
   "author": {
-    "name": "flurin"
+    "name": "flurin and dural"
   },
   "keywords": [
     "homebridge",
@@ -16,10 +16,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/cflurin/homebridge-mqtt.git"
+    "url": "https://github.com/dural/homebridge-mqtt-fixed-id.git"
   },
   "bugs": {
-    "url": "http://github.com/cflurin/homebridge-mqtt/issues"
+    "url": "http://github.com/dural/homebridge-mqtt-fixed-id/issues"
   },
   "engines": {
     "node": ">=4.3.2",
