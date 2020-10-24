@@ -3,7 +3,7 @@
 var Utils = require('./lib/utils.js').Utils;
 var Controller = require('./lib/controller.js').Controller;
 
-var HapAccessory, Service, Characteristic, UUIDGen;
+var HapAccessory, Service, Characteristic, UUIDGen, fixedId;
 var cachedAccessories = 0;
 
 var platform_name = "mqtt";
@@ -57,7 +57,8 @@ function PluginPlatform(log, config, api) {
     "HapAccessory": HapAccessory,
     "Characteristic": Characteristic,
     "Service": Service,
-    "UUIDGen": UUIDGen
+    "UUIDGen": UUIDGen,
+    "fixedId": fixedId
   }
   
   this.controller = new Controller(c_parameters);
